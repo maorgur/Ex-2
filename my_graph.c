@@ -5,12 +5,12 @@
 #include "my_mat.c"
 
 int main(){
-    char mode;
+    char mode = 'a'; //override garabage that can lead to problems
     int graph[10][10];
     int current_cell;
     int i, j;
     int result;
-    while (mode != 'D'){
+    while (mode != 'D' && mode != EOF){
         scanf("%c", &mode);
 
         switch (mode)
